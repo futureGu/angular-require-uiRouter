@@ -1,27 +1,31 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>My AngularJS AngularJS + RequireJS App</title>
-  <link rel="stylesheet" href="css/app.css">
+    <meta charset="utf-8">
+    <title>My AngularJS AngularJS + RequireJS App</title>
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
 </head>
 <body>
-  <!-- <ul class="menu">
-    <li><a href="#/view1">view1</a></li>
-    <li><a href="#/view2">view2</a></li>
-  </ul>
 
-  <div data-ng-view></div> -->
+<ul class="menu">
+    <button class="btn btn-success"><a ui-sref="view1">view1</a></button>
+    <button class="btn btn-success"><a ui-sref="view2">view2</a></button>
+</ul>
+<div ui-view></div>
 
-  <ul class="menu">
-    <li><a ui-sref="view1">view1</a></li>
-    <li><a ui-sref="view2">view2</a></li>
-  </ul>
-
-  <div ui-view></div>
-
-  <div>Angular Require seed app: v<span app-version></span></div>
-
-  <script src="lib/requirejs/require.js" data-main="js/main.js"></script>
+<div>Angular Require seed app: v<span app-version></span></div>
+<script src="lib/requirejs/require.js" data-main="js/main.js"></script>
+<script>
+    require(["./js/commonJS/student.js", "./js/commonJS/class.js"], function (student, cls) {
+        cls.addToClass(student.createStudent("顾魁", "male"));
+        cls.addToClass(student.createStudent("姚云", "male"));
+        console.log(cls.getClassSize());
+        var a = cls.getAllStudents();
+        for (x in a) {
+            console.log(a[x]);
+        }
+    });
+</script>
 </body>
 </html>

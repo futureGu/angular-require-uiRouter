@@ -3,7 +3,7 @@
  * The routes you see here will be anchors '#/' unless specifically configured otherwise.
  */
 
-define(['./app'], function(app) {
+define(['./app','jquery'], function(app) {
     'use strict';
     return app.config(function($stateProvider) {
         $stateProvider.state('view1',{

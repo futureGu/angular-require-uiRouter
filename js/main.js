@@ -8,7 +8,11 @@ require.config({
     paths: {
         'domReady': '../lib/requirejs-domready/domReady',
         'angular': '../lib/angular/angular',
-        "uiRouter": "../lib/angular/angular-ui-router"
+        "uiRouter": "../lib/angular/angular-ui-router",
+        "jquery":"./commonJS/jquery-2.2.2",
+        "class":'./commonJS/class',
+        "student":'./commonJS/student',
+        "test":"./commonJS/test"
     },
 
     /**
