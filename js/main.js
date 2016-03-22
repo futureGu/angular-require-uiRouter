@@ -12,7 +12,8 @@ require.config({
         "jquery":"./commonJS/jquery-2.2.2",
         "class":'./commonJS/class',
         "student":'./commonJS/student',
-        "test":"./commonJS/test"
+        "test":"./commonJS/test",
+        "jsonLib":"./commonJS/jsonLib"
     },
 
     /**
