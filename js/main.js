@@ -13,7 +13,6 @@ require.config({
         "class":'./commonJS/class',
         "student":'./commonJS/student',
         "test":"./commonJS/test",
-        "jsonLib":"./commonJS/jsonLib"
     },
 
     /**

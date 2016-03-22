@@ -1,4 +1,4 @@
-define(['test','jsonLib','./module'], function (test,json,controllers) {
+define(['test','./module'], function (test,controllers) {
     'use strict';
     controllers.controller('MyCtrl1', ['$scope', function ($scope) {
       $scope.student ={
@@ -16,7 +16,6 @@ define(['test','jsonLib','./module'], function (test,json,controllers) {
         $scope.toSum= function(num1,num2){
             return num1+num2;
         };
-        $scope.person = json.getPersonInfo();
     }]);
     return controllers;
 });
