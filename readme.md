@@ -1,2 +1,2 @@
 通过集成requireJS，AngularJS，并引入ui-router实现了SPA应用，初步掌握了ＡＭＤ规范的模块的编写，以及指令、服务模块的书写格式
-实现了一些简单应用，如service中数据传输到directive、controller等。
+实现了一些简单应用，如service中数据传输到directive、controller等
