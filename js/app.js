@@ -5,6 +5,8 @@
 define([
     'angular',
     'uiRouter',
+    'ng-chart',
+    'chart',
     './controllers/index',
     './directives/index',
     './filters/index',

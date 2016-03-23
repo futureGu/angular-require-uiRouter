@@ -3,7 +3,7 @@
  */
 'use strict';
 
-define([],function() {
+define(['jquery'],function(jquery) {
     var allStudents =[];
     return{
         classID:"001",

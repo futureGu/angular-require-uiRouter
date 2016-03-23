@@ -23,7 +23,13 @@
 <div class="col-sm-12 row">
     <test-directive></test-directive>
     <b-directive></b-directive>
+    <commit-button></commit-button>
 </div>
-
+<div class="col-sm-12 row">
+    <canvas id="line" class="chart chart-line" chart-data="data" chart-labels="labels" chart-legend="true"
+            chart-series="series" chart-click="onClick">
+    </canvas>
+</div>
+<p>{{series}}</p>
 
 

@@ -16,6 +16,9 @@ define(['test','./module'], function (test,controllers) {
         $scope.toSum= function(num1,num2){
             return num1+num2;
         };
+        $scope.pop = function(){
+          alert("真的么？")
+        };
     }]);
     return controllers;
 });

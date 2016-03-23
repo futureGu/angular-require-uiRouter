@@ -62,11 +62,27 @@ define(['./module'], function (services) {
             getPerson: function () {
                 return this.person;
             },
-            getNaviBar:function(){
+            getNaviBar: function () {
                 return this.naviBar;
-            }
-
+            },
         };
         return service;
+    }]);
+    services.service('commonData', ['$rootScope', function ($rootScope) {
+        var service = {
+            thisIsPrivate: "Private",
+            variable: "This is public",
+            getPrivate:function() {
+                return this.thisIsPrivate;
+            },
+            getVariable:function(){
+                return this.variable;
+            }
+        };
+        /*var thisIsPrivate = "Private";
+         var variable = "This is public";
+         getPrivate:function() {
+         return this.thisIsPrivate;
+         };*/
     }]);
 });

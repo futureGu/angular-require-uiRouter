@@ -1,5 +1,5 @@
 {
-  "name": "AngularJS + RequireJS Example",
+  "name": "Angulhttps://github.com/bitliner/AngularChart.gitarJS + RequireJS Example",
   "version": "0.1",
   "main": "index.html",
   "ignore": [
@@ -7,8 +7,9 @@
     "libs"
   ],
   "dependencies": {
-    "angular": "~1.0.8",
-    "requirejs": "~2.1.8",
-    "requirejs-domready": "~2.0.1"
+    "angular": "~latest",
+    "requirejs": "~latest",
+    "requirejs-domready": "~latest",
+    "ngular-chart.js":"~latest"
   }
 }

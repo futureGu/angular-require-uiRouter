@@ -8,6 +8,8 @@ require.config({
     paths: {
         'domReady': '../lib/requirejs-domready/domReady',
         'angular': '../lib/angular/angular',
+        "ng-chart":'../lib/angular/angular-chart',
+        "chart":'../lib/angular/Chart',
         "uiRouter": "../lib/angular/angular-ui-router",
         "jquery":"./commonJS/jquery-2.2.2",
         "class":'./commonJS/class',
@@ -25,6 +27,9 @@ require.config({
         },
         'uiRouter':{
             deps: ['angular']
+        },
+        'ng-chart':{
+            deps:['angular','chart']
         }
     },
     
